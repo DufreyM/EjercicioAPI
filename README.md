@@ -1,5 +1,5 @@
 ## Ingreso
-Utilicé Java con SpringBoot por lo que es necesario tener Java instalado y bien configurada la JVM. Además de tener el puerto 8083 que esta configurado libre. 
+Utilicé Java con SpringBoot por lo que es necesario tener Java instalado y bien configurada la JVM. Además de tener el puerto 8083 que esta configurado libre. Utilicé Spring Initializer
 
 ## Ejemplo de uso 
 
