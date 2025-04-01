@@ -33,7 +33,6 @@ type Incidente struct {
 
 // Función para conectar a la base de datos
 func initDB() {
-	// Cambia estos valores según tu configuración
 	dsn := "host=localhost user=postgres password=12345 dbname=incidentes_db port=5432 sslmode=disable"
 	db, err = gorm.Open(postgres.Open(dsn), &gorm.Config{})
 	if err != nil {
@@ -41,7 +40,7 @@ func initDB() {
 	}
 	fmt.Println("Conexión a la base de datos exitosa")
 
-	// Migración: Crear la tabla si no existe
+	//Crea la tabla si no existe
 	if err := db.AutoMigrate(&Incidente{}); err != nil {
 		log.Fatal("Error al migrar la base de datos:", err)
 	}
