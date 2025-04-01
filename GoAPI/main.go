@@ -34,7 +34,7 @@ type Incidente struct {
 // Función para conectar a la base de datos
 func initDB() {
 	// Cambia estos valores según tu configuración
-	dsn := "host=localhost user=postgres password=12345 dbname=incidentes_db port=5433 sslmode=disable"
+	dsn := "host=localhost user=postgres password=12345 dbname=incidentes_db port=5432 sslmode=disable"
 	db, err = gorm.Open(postgres.Open(dsn), &gorm.Config{})
 	if err != nil {
 		log.Fatal("Error al conectar a la base de datos:", err)
