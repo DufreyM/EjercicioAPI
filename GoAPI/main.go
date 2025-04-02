@@ -178,6 +178,10 @@ func updateIncidenteByID(c *gin.Context) {
 		return
 	}
 
+	if updateData.Status == "" {
+		c.JSON(http.StatusBadRequest, gin.H{"error": "El campo 'status' es obligatorio"})
+		return
+	}
 	incidente.Status = updateData.Status
 	db.Save(&incidente)
 
