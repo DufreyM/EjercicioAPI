@@ -21,7 +21,7 @@ Antes de ejecutar este proyecto, asegúrate de tener instalados:
    git clone https://github.com/DufreyM/EjercicioAPI.git
 
 2. **Base de datos**
-   Debes cambiar la variable db con la información de tu base de datos en postgres.
+   Debes cambiar la variable dsn con la información de tu base de datos en postgres.
    Debe estar activa y configurada en el puerto 5432
 
 ## EJEMPLOS DE USO 
