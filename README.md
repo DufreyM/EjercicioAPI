@@ -18,7 +18,11 @@ Antes de ejecutar este proyecto, asegúrate de tener instalados:
 
 1. **Clonar el repositorio**  
    ```sh
-   git clone https://github.com/DufreyM/EjercicioAPI.git 
+   git clone https://github.com/DufreyM/EjercicioAPI.git
+
+2. **Base de datos**
+   Debes cambiar la variable db con la información de tu base de datos en postgres.
+   Debe estar activa y configurada en el puerto 5432
 
 ## EJEMPLOS DE USO 
 Recomendable usar Postman. 
