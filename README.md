@@ -17,12 +17,26 @@ Antes de ejecutar este proyecto, asegúrate de tener instalados:
 ## Instalación y Configuración
 
 1. **Clonar el repositorio**  
-   ```sh
    git clone https://github.com/DufreyM/EjercicioAPI.git
+   cd EjercicioAPI/GoAPI
 
-2. **Base de datos**
+   📂 EjercicioAPI/
+ ├── 📂 GoAPI/
+ │   ├── main.go
+ │   ├── go.mod
+ │   ├── go.sum
+ ├── 📂 JavaAPI/  (Versión en Java incompleta, solo fue para empezar pero quería conocer un nuevo lenguaje.)
+
+
+3. **Base de datos**
    Debes cambiar la variable dsn con la información de tu base de datos en postgres.
-   Debe estar activa y configurada en el puerto 5432
+   Postgres por defecto debe estar activo y configurada en el puerto 5432
+
+4. Editar la variable dsn en el archivo principal main.go. 
+   dsn := "host=localhost user=postgres password=TU_PASSWORD dbname=incidentes_db port=5432 sslmode=disable"
+
+5. go run main.go, ejecutar.
+**La API se ejecutará en http://localhost:8083/.
 
 ## EJEMPLOS DE USO 
 Recomendable usar Postman. 
