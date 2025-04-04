@@ -84,6 +84,11 @@ func postIncidentes(c *gin.Context) {
 		return 
 	}
 
+	if newIncidente.Status != "pendiente" && newIncidente.Status != "en proceso" && newIncidente.Status != "resuelto" {
+		c.JSON(http.StatusBadRequest, gin.H{"error": "El estado debe ser 'pendiente', 'en proceso' o 'resuelto'"})
+		return
+	}
+
 	newIncidente.Fecha = time.Now()
 
 	db.Create(&newIncidente)
@@ -180,6 +185,11 @@ func updateIncidenteByID(c *gin.Context) {
 
 	if updateData.Status == "" {
 		c.JSON(http.StatusBadRequest, gin.H{"error": "El campo 'status' es obligatorio"})
+		return
+	}
+
+	if updateData.Status != "pendiente" && updateData.Status != "en proceso" && updateData.Status != "resuelto" {
+		c.JSON(http.StatusBadRequest, gin.H{"error": "El estado debe ser 'pendiente', 'en proceso' o 'resuelto'"})
 		return
 	}
 	incidente.Status = updateData.Status
