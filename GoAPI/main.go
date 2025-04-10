@@ -207,5 +207,8 @@ func main(){
 	router.GET("/incidentes/:id", getIncidenteByID)
 	router.DELETE("/incidentes/:id", deleteIncidenteByID)
 	router.PUT("/incidentes/:id", updateIncidenteByID)
+	router.StaticFile("/", "./index.html")
+	router.StaticFile("/style.css", "./style.css")
+	router.StaticFile("/script.js", "./script.js")
 	router.Run("localhost:8083")
 }

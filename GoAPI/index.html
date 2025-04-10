@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestión de Incidentes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Frontend de los Incidentes</h1>
+
+    <section id="form-section">
+        <h2>Nuevo Incidente</h2>
+        <form id="incidenteForm">
+            <input type="text" id="reportero" placeholder="Reportero" required>
+            <textarea id="descripcion" placeholder="Descripción (mínimo 10 caracteres)" required></textarea>
+            <select id="status">
+                <option value="pendiente">Pendiente</option>
+                <option value="en proceso">En proceso</option>
+                <option value="resuelto">Resuelto</option>
+            </select>
+            <button type="submit">Crear</button>
+        </form>
+    </section>
+
+    <section id="list-section">
+        <h2>Lista de Incidentes</h2>
+        <div id="listaIncidentes"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
