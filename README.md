@@ -20,12 +20,12 @@ Antes de ejecutar este proyecto, asegúrate de tener instalados:
    git clone https://github.com/DufreyM/EjercicioAPI.git
    cd EjercicioAPI/GoAPI
 
-   📂 EjercicioAPI/
- ├── 📂 GoAPI/
- │   ├── main.go
- │   ├── go.mod
- │   ├── go.sum
- ├── 📂 JavaAPI/  (Versión en Java incompleta, solo fue para empezar pero quería conocer un nuevo lenguaje.)
+   📂 EjercicioAPI/  
+ ├── 📂 GoAPI/  
+ │   ├── main.go  
+ │   ├── go.mod  
+ │   ├── go.sum  
+ ├── 📂 JavaAPI/  (Versión en Java incompleta, solo fue para empezar pero quería conocer un nuevo lenguaje.)  
 
 
 3. **Base de datos**
