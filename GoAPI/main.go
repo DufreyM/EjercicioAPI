@@ -212,5 +212,6 @@ func main(){
 	router.StaticFile("/script.js", "./script.js")
 	router.StaticFile("/Gatitos.jpeg", "./Gatitos.jpeg")
 	router.StaticFile("/cancion.mp3", "./cancion.mp3")
+	router.StaticFile("/Prueba1.jpg", "./Prueba1.jpg")
 	router.Run("localhost:8083")
 }
